@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4">Hello, I'm Kinjal</h1>
+            <h2>Frontend Developer</h2>
+            <p>I build responsive websites using HTML, CSS, JS & Bootstrap.</p>
+            <a href="#projects" class="btn btn-light mt-3">View Projects</a>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="IMG/profile.jpg" class="img-fluid rounded-circle" alt="Profile Image" width="250">
+                </div>
+                <div class="col-md-8">
+                    <h3>Hello!</h3>
+
+                    <p class="lead">
+                        I am a passionate Frontend Developer skilled in
+                        HTML, CSS, JavaScript, Bootstrap and responsive web design.
+                    </p>
+
+                    <p>
+                        I enjoy creating modern, responsive and user-friendly
+                        websites. I have worked on projects like College Website,
+                        Facebook Clone, Todo List, Calculator and Registration Form.
+                    </p>
+
+                    <a href="resume.pdf" class="btn btn-primary mt-3" download>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <div class="card skill-card p-4 shadow-sm">HTML</div>
+                </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card skill-card p-4 shadow-sm">CSS</div>
+                </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card skill-card p-4 shadow-sm">JavaScript</div>
+                </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card  skill-card p-4 shadow-sm">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects-bg py-5">
+        <div class="container">
+           <h2 class="text-center text-white fw-bold mb-4">Projects</h2> 
+           <div class="row">
+               <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/college.png" class="card-img-top" alt="College Website">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">College Website</h5>
+                            <p class="card-text">Responsive College website using HTML CSS Bootstrap.</p>
+                            <a href="https://joshikinjal93.github.io/Collegewebsite/" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/Collegewebsite" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/facebook.png" class="card-img-top" alt="Facebook Clone">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Facebook Clone</h5>
+                            <p class="card-text">Facebook UI clone using HTML, CSS and Bootstrap.</p>
+                            <a href="https://joshikinjal93.github.io/Facebookclone/" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/Facebookclone" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/todo.png" class="card-img-top" alt="Todo List">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Todo List</h5>
+                            <p class="card-text">Todo app using JavaScript with add and delete functionality.</p>
+                            <a href="https://joshikinjal93.github.io/JS-Project/Todolist.html" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/JS-Project" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/calculator.png" class="card-img-top" alt="Calculator">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Calculator</h5>
+                            <p class="card-text">Calculator using HTML CSS JavaScript.</p>
+                            <a href="https://joshikinjal93.github.io/JS-Project/Calculator.html" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/JS-Project" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/form.png" class="card-img-top" alt="Registration Form">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Registration Form</h5>
+                            <p class="card-text">Registration Form using HTML CSS JavaScript validation.</p>
+                            <a href="https://joshikinjal93.github.io/JS-Project/form_validation.html" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/JS-Project" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </section>
+    <!-- Contact form -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                   <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" id="name" class="form-control mb-2" placeholder="Enter Your Name"> 
+                            <small id="nameError" class="text-danger"></small>
+
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email" class="form-control mb-2" placeholder="Enter Your Email">
+                            <small id="emailError" class="text-danger"></small>
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="message" class="form-control mb-2" rows="5" placeholder="Message"></textarea>
+                            <small id="messageError" class="text-danger"></small>
+                        </div>
+                        <div id="successMsg" class="text-success fw-bold mb-3"></div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 Portfolio | All Rights Reserved</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let form = document.getElementById("contactForm");
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            // Error
+            let nameError = document.getElementById("nameError");
+            let emailError = document.getElementById("emailError");
+            let messageError = document.getElementById("messageError");
+            let successMsg = document.getElementById("successMsg");
+
+            // Rest Errors
+            nameError.textContent="";
+            emailError.textContent="";
+            messageError.textContent="";
+            successMsg.textContent="";
+
+            let isValid=true;
+
+            if (name === "") {
+                nameError.textContent="Please enter your name";
+                isValid=false;
+            }
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email.value)) {
+                emailError.textContent="Valid email required";
+                isValid=false;
+            }
+
+            if (message === "") {
+                messageError.textContent="Please enter your message";
+                isValid=false;
+            }
+
+            if (isValid) {
+                successMsg.textContent="Message Sent Successfully";
+                form.reset();
+                setTimeout(() => {
+                   successMsg.textContent="";
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
