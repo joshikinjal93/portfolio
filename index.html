@@ -44,8 +44,8 @@
     <section id="home" class="hero d-flex align-items-center">
         <div class="container text-center">
             <h1 class="display-4">Hello, I'm Kinjal</h1>
-            <h2>Frontend Developer</h2>
-            <p>I build responsive websites using HTML, CSS, JS & Bootstrap.</p>
+            <h2 class="fw-light mb-3">Frontend Developer</h2>
+            <p class="lead">I create modern, responsive and user-friendly websites using HTML, CSS, JavaScript, Bootstrap and React.</p>
             <a href="#projects" class="btn btn-light mt-3">View Projects</a>
         </div>
     </section>
@@ -58,17 +58,14 @@
                     <img src="IMG/profile.jpg" class="img-fluid rounded-circle" alt="Profile Image" width="250">
                 </div>
                 <div class="col-md-8">
-                    <h3>Hello!</h3>
-
                     <p class="lead">
-                        I am a passionate Frontend Developer skilled in
-                        HTML, CSS, JavaScript, Bootstrap and responsive web design.
+                       I am a passionate Frontend Developer skilled in HTML, CSS, JavaScript, Bootstrap, React and responsive web design. 
                     </p>
 
                     <p>
                         I enjoy creating modern, responsive and user-friendly
                         websites. I have worked on projects like College Website,
-                        Facebook Clone, Todo List, Calculator and Registration Form.
+                        Facebook Clone, Todo List, Calculator and Registration Form and Kids Academy.
                     </p>
 
                     <a href="resume.pdf" class="btn btn-primary mt-3" download>
@@ -92,8 +89,11 @@
                  <div class="col-md-3 mb-3">
                     <div class="card skill-card p-4 shadow-sm">JavaScript</div>
                 </div>
-                 <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-3">
                     <div class="card  skill-card p-4 shadow-sm">Bootstrap</div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card  skill-card p-4 shadow-sm">React</div>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                </div>
-                <div class="col-md-4 mb-4">
+               <div class="col-md-4 mb-4">
                     <div class="card project-card h-100 shadow-sm p-3">
                         <img src="IMG/form.png" class="card-img-top" alt="Registration Form">
                         <div class="card-body">
@@ -155,6 +155,17 @@
                             <p class="card-text">Registration Form using HTML CSS JavaScript validation.</p>
                             <a href="https://joshikinjal93.github.io/JS-Project/form_validation.html" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
                             <a href="https://github.com/joshikinjal93/JS-Project" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm p-3">
+                        <img src="IMG/kidsacademy.png" class="card-img-top" alt="Registration Form">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kids Academy</h5>
+                            <p class="card-text">Responsive Kids Academy website built using React and Bootstrap with modern UI design.</p>
+                            <a href="#" target="_blank" class="btn btn-primary btn-sm project-btn">Live</a>
+                            <a href="https://github.com/joshikinjal93/KidsAcademy/" target="_blank" class="btn btn-dark btn-sm project-btn"> GitHub</a>
                         </div>
                     </div>
                </div>
@@ -167,18 +178,18 @@
             <h2 class="text-center fw-bold mb-5">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                   <form id="contactForm">
+                   <form id="contactForm" novalidate>
                         <div class="mb-3">
-                            <input type="text" id="name" class="form-control mb-2" placeholder="Enter Your Name"> 
+                            <input type="text" id="name" class="form-control mb-2" placeholder="Enter Your Name" required> 
                             <small id="nameError" class="text-danger"></small>
 
                         </div>
                         <div class="mb-3">
-                            <input type="email" id="email" class="form-control mb-2" placeholder="Enter Your Email">
+                            <input type="email" id="email" class="form-control mb-2" placeholder="Enter Your Email" required>
                             <small id="emailError" class="text-danger"></small>
                         </div>
                         <div class="mb-3">
-                            <textarea id="message" class="form-control mb-2" rows="5" placeholder="Message"></textarea>
+                            <textarea id="message" class="form-control mb-2" rows="5" placeholder="Message" required></textarea>
                             <small id="messageError" class="text-danger"></small>
                         </div>
                         <div id="successMsg" class="text-success fw-bold mb-3"></div>
@@ -223,7 +234,7 @@
 
             let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            if (!emailPattern.test(email.value)) {
+            if (!emailPattern.test(email)) {
                 emailError.textContent="Valid email required";
                 isValid=false;
             }
