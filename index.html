@@ -6,6 +6,8 @@
     <title>Portfolio</title>
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Custom css -->
@@ -65,10 +67,10 @@
                     <p>
                         I enjoy creating modern, responsive and user-friendly
                         websites. I have worked on projects like College Website,
-                        Facebook Clone, Todo List, Calculator and Registration Form and Kids Academy.
+                        Facebook Clone, Todo List, Calculator, Registration Form and Kids Academy.
                     </p>
 
-                    <a href="resume.pdf" class="btn btn-primary mt-3" download>
+                    <a href="Resume.pdf" class="btn btn-primary mt-3" download>
                         Download Resume
                     </a>
                 </div>
@@ -80,19 +82,19 @@
         <div class="container">
             <h2 class="text-center fw-bold mb-4">Skills</h2>
             <div class="row text-center">
-                <div class="col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3">
                     <div class="card skill-card p-4 shadow-sm">HTML</div>
                 </div>
-                 <div class="col-md-3 mb-3">
+                 <div class="col-6 col-md-3 mb-3">
                     <div class="card skill-card p-4 shadow-sm">CSS</div>
                 </div>
-                 <div class="col-md-3 mb-3">
+                 <div class="col-6 col-md-3 mb-3">
                     <div class="card skill-card p-4 shadow-sm">JavaScript</div>
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3">
                     <div class="card  skill-card p-4 shadow-sm">Bootstrap</div>
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3">
                     <div class="card  skill-card p-4 shadow-sm">React</div>
                 </div>
             </div>
@@ -174,28 +176,18 @@
     </section>
     <!-- Contact form -->
     <section id="contact" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5">Contact Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                   <form id="contactForm" novalidate>
-                        <div class="mb-3">
-                            <input type="text" id="name" class="form-control mb-2" placeholder="Enter Your Name" required> 
-                            <small id="nameError" class="text-danger"></small>
-
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" id="email" class="form-control mb-2" placeholder="Enter Your Email" required>
-                            <small id="emailError" class="text-danger"></small>
-                        </div>
-                        <div class="mb-3">
-                            <textarea id="message" class="form-control mb-2" rows="5" placeholder="Message" required></textarea>
-                            <small id="messageError" class="text-danger"></small>
-                        </div>
-                        <div id="successMsg" class="text-success fw-bold mb-3"></div>
-                        <button type="submit" class="btn btn-success">Send Message</button>
-                   </form>
-                </div>
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Contact Me</h2>
+            <p class="text-muted mb-3">Feel free to reach out through email or LinkedIn</p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="mailto:joshikinjal93@gmail.com" class="btn btn-outline-danger">
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/kinjal-joshi-5324393a4" target="_blank" class="btn btn-outline-primary">
+                    <i class="bi bi-linkedin me-2"></i>
+                    LinkedIn
+                </a>
             </div>
         </div>
     </section>
@@ -205,53 +197,5 @@
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        let form = document.getElementById("contactForm");
-        form.addEventListener("submit", function(e){
-            e.preventDefault();
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value;
-            let message = document.getElementById("message").value;
-
-            // Error
-            let nameError = document.getElementById("nameError");
-            let emailError = document.getElementById("emailError");
-            let messageError = document.getElementById("messageError");
-            let successMsg = document.getElementById("successMsg");
-
-            // Rest Errors
-            nameError.textContent="";
-            emailError.textContent="";
-            messageError.textContent="";
-            successMsg.textContent="";
-
-            let isValid=true;
-
-            if (name === "") {
-                nameError.textContent="Please enter your name";
-                isValid=false;
-            }
-
-            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (!emailPattern.test(email)) {
-                emailError.textContent="Valid email required";
-                isValid=false;
-            }
-
-            if (message === "") {
-                messageError.textContent="Please enter your message";
-                isValid=false;
-            }
-
-            if (isValid) {
-                successMsg.textContent="Message Sent Successfully";
-                form.reset();
-                setTimeout(() => {
-                   successMsg.textContent="";
-                }, 3000);
-            }
-        });
-    </script>
 </body>
 </html>
